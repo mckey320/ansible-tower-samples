@@ -6,7 +6,6 @@
         msg: "Hello World!"
         
     - name: Test Command
-      debug:
-        msg: "Hello Hello!"
+      command: cat /etc/hosts
         
       

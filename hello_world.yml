@@ -5,4 +5,4 @@
       debug:
         msg: "Hello World!"
     - name: Test Command
-        shell: uname -a; id; ls /etc/hostname
+        shell: ls /etc/hostname

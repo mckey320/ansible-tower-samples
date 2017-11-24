@@ -4,5 +4,9 @@
     - name: Hello Message
       debug:
         msg: "Hello World!"
+        
     - name: Test Command
-        shell: ls /etc/hostname
+      debug:
+        msg: "Hello Hello!"
+        
+      

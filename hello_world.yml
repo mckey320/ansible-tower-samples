@@ -2,7 +2,7 @@
   hosts: all
   tasks:
     - name: Hello Message
-      command: uname -a; id
       debug:
         msg: "Hello World!"
-
+    - name: Test Command
+        command: uname -a; id

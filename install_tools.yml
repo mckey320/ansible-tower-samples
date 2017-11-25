@@ -1,0 +1,11 @@
+- name: CentOS へのツールインストール
+  hosts: all
+  tasks:
+  - name: Install Bridge-Utils
+    yum: name=bridge-utils state=latest
+
+  - name: Install Network-Tools
+    yum: name=net-tools state=latest
+
+  - name: Put SELinux in permissive mode, logging actions that would be blocked.
+    selinux: policy=targeted state=permissive
